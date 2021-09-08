@@ -679,10 +679,10 @@
     /* These functions turn the CYOL object compatible with the Mod interface,
      * used by Game.registerMod.
      */
-    let name = "Choose Your Own Lump";
+    let name = "Choose Your Own Lump (Steam)";
     let version = version$1;
-    let GameVersion = "2.031";
-    let CCSEVersion = "2.025";
+    let GameVersion = "2.042";
+    let CCSEVersion = "2.026";
     let isLoaded = false;
     function save() {
         return exportSettings();
@@ -770,7 +770,7 @@
             if (!window.CCSE.postLoadHooks)
                 window.CCSE.postLoadHooks = [];
             window.CCSE.postLoadHooks.push(function () {
-                if (window.CCSE.ConfirmGameCCSEVersion(name, version, GameVersion, CCSEVersion)) {
+                if (window.CCSE.ConfirmGameVersion(name, version, GameVersion, CCSEVersion)) {
                     Game.registerMod(id, CYOL);
                 }
             });

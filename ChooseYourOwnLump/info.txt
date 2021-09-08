@@ -1,0 +1,11 @@
+{
+    "Name": "Choose Your Own Lump (Steam)",
+    "ID": "Choose your own lump",
+    "Author": "Static Variable James",
+    "Description": "Cookie Clicker mod to aid choosing specific sugar lump types",
+    "ModVersion": "1.3.2",
+    "GameVersion": 2.042,
+    "Date": "07/09/2021",
+    "Dependencies": ["CCSE"],
+    "Disabled": 1
+}
