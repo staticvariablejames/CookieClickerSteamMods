@@ -1,0 +1,11 @@
+{
+    "Name": "Spiced Cookies (Steam)",
+    "ID": "Spiced cookies",
+    "Author": "Static Variable James",
+    "Description": "Mod for Cookie Clicker featuring several small changes to gameplay",
+    "ModVersion": "0.5.6",
+    "GameVersion": 2.042,
+    "Date": "07/09/2021",
+    "Dependencies": ["CCSE"],
+    "Disabled": 1
+}

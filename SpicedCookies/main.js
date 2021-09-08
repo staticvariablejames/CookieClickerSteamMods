@@ -5,8 +5,8 @@ if(typeof CCSE == 'undefined') Game.LoadMod('https://klattmose.github.io/CookieC
 
 Spice.name = "Spiced Cookies";
 Spice.version = "0.5.6"; // Semantic versioning
-Spice.GameVersion = "2.031";
-Spice.CCSEVersion = "2.025";
+Spice.GameVersion = "2.042";
+Spice.CCSEVersion = "2.026";
 
 /* rewriteCode(targetFunction, pattern1, replacement1, pattern2, replacement2, ...)
  *
@@ -46,7 +46,7 @@ Spice.rewriteMinigameCode = function(buildingName, targetFunction, ...args) {
 }
 
 // Icons
-Spice.iconsURL = 'https://staticvariablejames.github.io/SpicedCookies/img/icons.png';
+Spice.iconsURL = '../mods/local/SpicedCookies/img/icons.png';
 Spice.icons = {};
 Spice.icons.floppyDisk = [0, 0, Spice.iconsURL];
 
@@ -1981,7 +1981,7 @@ if(!Spice.isLoaded){
         if(!CCSE) var CCSE = {};
         if(!CCSE.postLoadHooks) CCSE.postLoadHooks = [];
         CCSE.postLoadHooks.push(function() {
-            if(CCSE.ConfirmGameCCSEVersion(Spice.name, Spice.version, Spice.GameVersion, Spice.CCSEVersion)) {
+            if(CCSE.ConfirmGameVersion(Spice.name, Spice.version, Spice.GameVersion, Spice.CCSEVersion)) {
                 Game.registerMod('Spiced cookies', Spice);
             }
         });
