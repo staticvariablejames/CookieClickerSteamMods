@@ -5,7 +5,7 @@ if(typeof CCSE == 'undefined') Game.LoadMod('https://klattmose.github.io/CookieC
 
 InsugarTrading.name = "Insugar Trading";
 InsugarTrading.version = "1.3.5"; // Semantic versioning
-InsugarTrading.GameVersion = "2.031";
+InsugarTrading.GameVersion = "2.042";
 InsugarTrading.CCSEVersion = "2.025";
 
 /* The data here is just a histogram:
@@ -23,7 +23,7 @@ InsugarTrading.CCSEVersion = "2.025";
 InsugarTrading.data = [null];
 
 InsugarTrading.datasetUrl = function(bankLevel) {
-    return 'https://staticvariablejames.github.io/InsugarTrading/data/lvl' + bankLevel + '.js';
+    return CCSE.GetModPath(InsugarTrading.name) + '/data/lvl' + bankLevel + '.js';
 }
 InsugarTrading.highestAvailableDatasetLevel = 50;
 
@@ -701,7 +701,7 @@ if(!InsugarTrading.isLoaded){
         if(!CCSE) var CCSE = {};
         if(!CCSE.postLoadHooks) CCSE.postLoadHooks = [];
         CCSE.postLoadHooks.push(function() {
-            if(CCSE.ConfirmGameCCSEVersion(InsugarTrading.name, InsugarTrading.version, InsugarTrading.GameVersion, InsugarTrading.CCSEVersion)) {
+            if(CCSE.ConfirmGameVersion(InsugarTrading.name, InsugarTrading.version, InsugarTrading.GameVersion, InsugarTrading.CCSEVersion)) {
                 Game.registerMod('Insugar Trading', InsugarTrading);
             }
         });

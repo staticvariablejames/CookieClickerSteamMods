@@ -1,0 +1,12 @@
+{
+    "Name": "Insugar Trading (Steam)",
+    "ID": "Insugar Trading",
+    "Author": "Static Variable James",
+    "Description": "Cookie Clicker add-on for stock market analytics",
+    "ModVersion": "1.3.5",
+    "GameVersion": 2.042,
+    "Date": "07/09/2021",
+    "Dependencies": ["CCSE"],
+    "Disabled": 1,
+    "AllowSteamAchievs": 1
+}
